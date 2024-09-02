@@ -134,6 +134,7 @@ module MS_DMAC_AHBL (
                             else  
                                 nstate = RA_STATE; 
                         end else nstate = WD_STATE;
+            default: nstate = state;
         endcase 
 
     // The Address Sequence Generator
